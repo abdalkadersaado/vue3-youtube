@@ -1,0 +1,33 @@
+@import "./mediaQueries/mediaQueries.scss";
+@import "./scroll/scroll.scss";
+@import "./backgrounds/backgrounds.scss";
+@import "./breakpoints/index.scss";
+// BODY
+body {
+  background-color: var(--body-bg-color);
+  overflow-y: auto;
+
+  & #app {
+    min-height: 100vh;
+  }
+
+  @extend .sc-scroll-one;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+input {
+  font-family: var(--font-roboto);
+  color: var(--text-color);
+}
+
+svg {
+  fill: var(--icon-color);
+}
